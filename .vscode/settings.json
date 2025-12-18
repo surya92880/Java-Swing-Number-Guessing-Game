@@ -1,0 +1,19 @@
+{
+    // This ensures the Java compiler targets Java 11 features
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-11",
+            "path": "/path/to/your/jdk-11", // Replace with your actual JDK 11 installation path
+            "default": true
+        }
+    ],
+
+    // This sets the source and target compatibility to Java 11
+    "java.configuration.checkProjectSettingsExclusions": [
+        "**/src/main/java",
+        "**/src/test/java"
+    ],
+    "java.configuration.maven.userSettings": "", // Optional, but good to check
+    "java.compile.source": "11",
+    "java.compile.target": "11"
+}
